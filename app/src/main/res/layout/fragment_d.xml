@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A"
+    android:gravity="center"
+    android:id="@+id/linear1"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/setting"
+        android:layout_gravity="center"
+        android:id="@+id/rotate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apana Bana Le.mp3"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:text="Pause"
+            android:layout_margin="10dp"
+            android:background="@drawable/round"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:text="Play"
+            android:layout_margin="10dp"
+            android:background="@drawable/round"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            android:text="Stop"
+            android:layout_margin="10dp"
+            android:background="@drawable/round"/>
+    </LinearLayout>
+
+
+</LinearLayout>

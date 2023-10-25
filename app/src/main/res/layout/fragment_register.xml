@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Page"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textColor="#3098EA"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a Name"
+        android:textSize="20dp"
+        android:textColor="#3098EA"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a Name"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:id="@+id/e1"
+        android:inputType="text"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a Mobile Number"
+        android:textSize="20dp"
+        android:textColor="#3098EA"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a Mobile Number"
+        android:drawableLeft="@drawable/call"
+        android:drawablePadding="10dp"
+        android:id="@+id/e2"
+        android:inputType="phone"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a Email Address"
+        android:textSize="20dp"
+        android:textColor="#3098EA"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a Email Address"
+        android:drawableLeft="@drawable/email"
+        android:id="@+id/e3"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="10dp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a Password"
+        android:textSize="20dp"
+        android:textColor="#3098EA"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Create a Password"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:id="@+id/e4"
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"/>
+</LinearLayout>

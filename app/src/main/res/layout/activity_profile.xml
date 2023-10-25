@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        app:cardCornerRadius="250dp"
+        app:cardBackgroundColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="250dp"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/round"
+                android:id="@+id/externalimage"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_margin="21dp"
+                android:background="@drawable/round1"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                android:src="@drawable/camera"
+                tools:ignore="MissingConstraints" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a Name"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:textColor="#57A8E8"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Enter a Name"
+        android:editable="true"
+        android:drawableLeft="@drawable/clearperson"
+        android:drawablePadding="10dp"
+        android:id="@+id/e1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a Phone Number"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:textColor="#57A8E8"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Enter a Phone"
+        android:editable="true"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/call"
+        android:drawablePadding="10dp"
+        android:id="@+id/e2"
+        android:maxLength="10"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter a Email Id"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:textColor="#57A8E8"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Enter a Email Address"
+        android:editable="true"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:id="@+id/e3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a Password"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:textColor="#57A8E8"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:background="@color/white">
+            <EditText
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a Password"
+                android:inputType="numberPassword"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="7dp"
+                android:id="@+id/e4"
+                android:ems="5"
+                android:maxLength="8">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--<ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/key"
+            android:background="@drawable/round"
+            android:id="@+id/eye1"
+            android:layout_marginTop="6dp"/>-->
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:background="@drawable/round"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:id="@+id/submit"
+        />
+</LinearLayout>
